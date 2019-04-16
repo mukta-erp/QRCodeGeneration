@@ -31,7 +31,7 @@
   		   	  String imageName = (String) request.getAttribute("imageName");
   			  out.println(imageName);
 		%>
-		<!-- Display QR image -->
+		<!-- Display QR image GIT -->
   				  Your QR  Code is <br>
 		<!--  This QR image get Run time image name and match to image folder <br>-->
 		<img src="image\\<%= request.getAttribute("imageName") %>.png" style="width:48px;height:48px" /><br>
