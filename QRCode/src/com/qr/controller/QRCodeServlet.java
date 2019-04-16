@@ -78,7 +78,7 @@ public class QRCodeServlet extends HttpServlet {
 			
 			
 			System.out.println("qrCodeData"+qrCodeData);
-			
+			//to store the image to specify path
 			String filePath = "D:\\Varsha\\New folder\\QRCode\\WebContent\\image\\"+imageName+".png";	
 			//filePath replace the data into original QR image and  generate the new data on same image(just replace the data)
 			//String filePath = "D:\\Varsha\\New folder\\QRCode\\WebContent\\image\\QRCode.png";
@@ -102,7 +102,7 @@ public class QRCodeServlet extends HttpServlet {
 					
 					e.printStackTrace();
 				}
-			
+		
 			request.setAttribute("imageName", imageName);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("DisplayQRCode.jsp");
 			dispatcher.forward( request, response );
